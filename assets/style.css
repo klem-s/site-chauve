@@ -191,7 +191,7 @@ nav a:hover { color: var(--accent); }
 }
 .celeb-card:hover { transform: translateY(-4px); }
 .celeb-card .avatar-wrap { margin-bottom: 14px; }
-.celeb-card .photo-wrap {
+.photo-wrap {
   margin: 0 auto 14px;
   width: 110px;
   height: 110px;
@@ -199,7 +199,7 @@ nav a:hover { color: var(--accent); }
   overflow: hidden;
   box-shadow: 0 0 0 4px var(--bg), 0 0 0 6px var(--accent);
 }
-.celeb-card .photo-wrap img {
+.photo-wrap img {
   width: 100%;
   height: 100%;
   object-fit: cover;
