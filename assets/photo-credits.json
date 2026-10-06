@@ -1,0 +1,50 @@
+{
+  "dwayne-johnson": {
+    "file": "dwayne-johnson.jpg",
+    "artist": "Harald Krichel",
+    "license": "CC BY-SA 4.0",
+    "name": "Dwayne Johnson"
+  },
+  "bruce-willis": {
+    "file": "bruce-willis.jpg",
+    "artist": "Gage Skidmore",
+    "license": "CC BY-SA 3.0",
+    "name": "Bruce Willis"
+  },
+  "vin-diesel": {
+    "file": "vin-diesel.jpg",
+    "artist": "Gage Skidmore",
+    "license": "CC BY-SA 3.0",
+    "name": "Vin Diesel"
+  },
+  "jason-statham": {
+    "file": "jason-statham.jpg",
+    "artist": "MTV International",
+    "license": "CC BY 3.0",
+    "name": "Jason Statham"
+  },
+  "zinedine-zidane": {
+    "file": "zinedine-zidane.jpg",
+    "artist": "Hadi Abyar",
+    "license": "CC BY 4.0",
+    "name": "Zinedine Zidane"
+  },
+  "patrick-stewart": {
+    "file": "patrick-stewart.jpg",
+    "artist": "Gage Skidmore",
+    "license": "CC BY-SA 3.0",
+    "name": "Patrick Stewart"
+  },
+  "michael-jordan": {
+    "file": "michael-jordan.jpg",
+    "artist": "Zach Catanzareti Photo",
+    "license": "CC BY 2.0",
+    "name": "Michael Jordan"
+  },
+  "mahatma-gandhi": {
+    "file": "mahatma-gandhi.jpg",
+    "artist": "Elliott &amp; Fry",
+    "license": "Public domain",
+    "name": "Mahatma Gandhi"
+  }
+}

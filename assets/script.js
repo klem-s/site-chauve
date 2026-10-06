@@ -28,14 +28,14 @@ function svgHead({ skin = "#f2c29b", shade = "#d9a67a", glasses, mustache, beard
 }
 
 const CELEBS = [
-  { name: "Dwayne Johnson", role: "Acteur & catcheur", fact: "Son crâne rasé est devenu une véritable marque de fabrique à Hollywood.", skin: "#c68642", shade: "#8d5524", glasses: false, mustache: false, beard: true, tie: false },
-  { name: "Bruce Willis", role: "Acteur", fact: "Révélé chauve dès les années 90, il a transformé un défi capillaire en style iconique.", skin: "#f2c29b", shade: "#d9a67a", beard: false, tie: "#3b5b92" },
-  { name: "Vin Diesel", role: "Acteur", fact: "Chauve assumé depuis ses débuts, il n'a jamais cherché à le cacher.", skin: "#c68642", shade: "#8d5524", glasses: true },
-  { name: "Jason Statham", role: "Acteur", fact: "Ancien plongeur olympique, il garde le crâne rasé depuis toute sa carrière d'action.", skin: "#f2c29b", shade: "#d9a67a", beard: true },
-  { name: "Zinédine Zidane", role: "Footballeur", fact: "Le milieu de terrain français a dégagé son crâne jusqu'au sommet du foot mondial.", skin: "#e0a872", shade: "#b67f4a", mustache: false },
-  { name: "Patrick Stewart", role: "Acteur", fact: "Chauve depuis l'âge de 19 ans, il en a fait un atout de charisme au théâtre et à l'écran.", skin: "#ffdbac", shade: "#e0b48c", glasses: false, tie: "#444" },
-  { name: "Michael Jordan", role: "Basketteur", fact: "Icône du basket, son crâne rasé est aussi reconnaissable que son maillot numéro 23.", skin: "#8d5524", shade: "#6b3f17", earring: true },
-  { name: "Mahatma Gandhi", role: "Figure historique", fact: "Son crâne rasé symbolisait la simplicité et le renoncement matériel.", skin: "#e0a872", shade: "#b67f4a", glasses: true },
+  { name: "Dwayne Johnson", role: "Acteur & catcheur", fact: "Son crâne rasé est devenu une véritable marque de fabrique à Hollywood.", photo: "dwayne-johnson.jpg", credit: "Harald Krichel, CC BY-SA 4.0" },
+  { name: "Bruce Willis", role: "Acteur", fact: "Révélé chauve dès les années 90, il a transformé un défi capillaire en style iconique.", photo: "bruce-willis.jpg", credit: "Gage Skidmore, CC BY-SA 3.0" },
+  { name: "Vin Diesel", role: "Acteur", fact: "Chauve assumé depuis ses débuts, il n'a jamais cherché à le cacher.", photo: "vin-diesel.jpg", credit: "Gage Skidmore, CC BY-SA 3.0" },
+  { name: "Jason Statham", role: "Acteur", fact: "Ancien plongeur olympique, il garde le crâne rasé depuis toute sa carrière d'action.", photo: "jason-statham.jpg", credit: "MTV International, CC BY 3.0" },
+  { name: "Zinédine Zidane", role: "Footballeur", fact: "Le milieu de terrain français a dégagé son crâne jusqu'au sommet du foot mondial.", photo: "zinedine-zidane.jpg", credit: "Hadi Abyar, CC BY 4.0" },
+  { name: "Patrick Stewart", role: "Acteur", fact: "Chauve depuis l'âge de 19 ans, il en a fait un atout de charisme au théâtre et à l'écran.", photo: "patrick-stewart.jpg", credit: "Gage Skidmore, CC BY-SA 3.0" },
+  { name: "Michael Jordan", role: "Basketteur", fact: "Icône du basket, son crâne rasé est aussi reconnaissable que son maillot numéro 23.", photo: "michael-jordan.jpg", credit: "Zach Catanzareti Photo, CC BY 2.0" },
+  { name: "Mahatma Gandhi", role: "Figure historique", fact: "Son crâne rasé symbolisait la simplicité et le renoncement matériel.", photo: "mahatma-gandhi.jpg", credit: "Elliott & Fry, domaine public" },
 ];
 
 const GALLERY = [
@@ -55,10 +55,13 @@ function renderCelebs() {
   const grid = document.getElementById("celeb-grid");
   grid.innerHTML = CELEBS.map(c => `
     <div class="celeb-card">
-      <div class="avatar-wrap">${svgHead(c)}</div>
+      <div class="photo-wrap">
+        <img src="assets/photos/${c.photo}" alt="${c.name}" loading="lazy" width="160" height="160" />
+      </div>
       <h3>${c.name}</h3>
       <div class="role">${c.role}</div>
       <p class="fact">${c.fact}</p>
+      <p class="credit">📷 ${c.credit}</p>
     </div>
   `).join("");
 }
