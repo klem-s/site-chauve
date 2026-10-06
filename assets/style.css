@@ -125,6 +125,39 @@ nav a:hover { color: var(--accent); }
   margin: 0 auto 40px;
 }
 
+/* Invité */
+.invite-section { padding-top: 50px; padding-bottom: 50px; }
+.invite-card {
+  max-width: 340px;
+  margin: 24px auto 0;
+  background: var(--card-bg);
+  border-radius: 20px;
+  padding: 28px 24px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  border: 2px solid #e8c468;
+}
+.invite-photo {
+  width: 140px;
+  height: 140px;
+  margin: 0 auto 16px;
+  box-shadow: 0 0 0 4px var(--bg), 0 0 0 7px #e8c468;
+}
+.invite-card h3 { font-size: 1.2rem; margin-bottom: 2px; }
+.invite-card .role {
+  color: #b8860b;
+  font-size: .82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  margin-bottom: 12px;
+}
+.invite-card .fact {
+  color: var(--ink-soft);
+  font-size: .95rem;
+  margin: 0;
+}
+
 /* Origin cards */
 .origin-grid {
   display: grid;
