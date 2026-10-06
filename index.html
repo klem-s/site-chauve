@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chauves Célèbres — Le site vitrine de la calvitie</title>
+<meta name="description" content="Un site vitrine ludique dédié aux chauves : origine du mot, galerie, célébrités et anecdotes.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2255%22 r=%2240%22 fill=%22%23f2c29b%22/></svg>">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="#top" class="logo">✨ Chauves<span>Célèbres</span></a>
+    <nav>
+      <a href="#origine">Origine</a>
+      <a href="#celebrites">Célébrités</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#anecdotes">Anecdotes</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="container hero-inner">
+      <h1>La calvitie, c'est une couronne qu'on porte sans couronne.</h1>
+      <p class="subtitle">Bienvenue sur le site qui célèbre les crânes brillants, leur histoire et leurs plus illustres représentants.</p>
+      <div class="hero-avatars" aria-hidden="true">
+        <span class="mini-head h1"></span>
+        <span class="mini-head h2"></span>
+        <span class="mini-head h3"></span>
+        <span class="mini-head h4"></span>
+      </div>
+      <a href="#origine" class="cta">Découvrir ↓</a>
+    </div>
+  </section>
+
+  <section id="origine" class="section">
+    <div class="container">
+      <h2>D'où vient le mot « chauve » ?</h2>
+      <div class="origin-grid">
+        <div class="origin-card">
+          <h3>🏛️ Étymologie latine</h3>
+          <p>Le mot français <strong>« chauve »</strong> vient du latin <em>calvus</em>, qui signifiait déjà « qui n'a pas de cheveux ». Ce même radical a donné naissance à « calvitie » (l'état d'être chauve) et au nom propre <strong>Calvin</strong>, ainsi qu'au mont <strong>Calvaire</strong> — littéralement « lieu du crâne chauve », à cause de sa forme arrondie et dénudée.</p>
+        </div>
+        <div class="origin-card">
+          <h3>📜 Une vieille racine</h3>
+          <p>Le latin <em>calvus</em> dérive probablement d'une racine indo-européenne liée à l'idée de « nu » ou « dénudé ». On retrouve des cousins de ce mot dans plusieurs langues romanes : <em>calvo</em> en espagnol et en italien, <em>calvo</em> en portugais.</p>
+        </div>
+        <div class="origin-card">
+          <h3>🦅 La chauve-souris</h3>
+          <p>Petite curiosité : la <strong>chauve-souris</strong> n'a historiquement rien à voir avec la calvitie ! Son nom viendrait d'une déformation de « chalve souris », du latin <em>calva sorex</em> (« souris chauve »), les anciens croyant observer une souris volante à la peau nue et sans poils sur les ailes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="celebrites" class="section alt">
+    <div class="container">
+      <h2>Chauves célèbres</h2>
+      <p class="section-intro">Illustrations stylisées — hommage à quelques crânes qui ont marqué le cinéma, le sport et l'histoire. (Avatars dessinés, pas des photos, pour respecter le droit à l'image.)</p>
+      <div class="celeb-grid" id="celeb-grid"></div>
+    </div>
+  </section>
+
+  <section id="galerie" class="section">
+    <div class="container">
+      <h2>Galerie de crânes brillants</h2>
+      <p class="section-intro">Toute la diversité de la calvitie, en version illustrée.</p>
+      <div class="gallery" id="gallery"></div>
+    </div>
+  </section>
+
+  <section id="anecdotes" class="section alt">
+    <div class="container">
+      <h2>Anecdotes &amp; chiffres</h2>
+      <div class="facts-grid">
+        <div class="fact-card">
+          <div class="fact-number">50%</div>
+          <p>des hommes présentent une calvitie visible à 50 ans.</p>
+        </div>
+        <div class="fact-card">
+          <div class="fact-number">25%</div>
+          <p>des hommes commencent à perdre leurs cheveux avant 21 ans.</p>
+        </div>
+        <div class="fact-card">
+          <div class="fact-number">1er</div>
+          <p>siège du pharaon égyptien : des perruques étaient déjà portées dès l'Antiquité pour couvrir les crânes dégarnis.</p>
+        </div>
+        <div class="fact-card">
+          <div class="fact-number">+5%</div>
+          <p>de chaleur en moins perdue : certaines études suggèrent qu'un crâne rasé régule mieux la température en plein effort.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>Fait avec 🧠 et zéro cheveu. © <span id="year"></span> Chauves Célèbres.</p>
+  </div>
+</footer>
+
+<script src="assets/script.js"></script>
+</body>
+</html>
